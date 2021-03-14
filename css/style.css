@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: rgba(0,0,0,0.6);
+}
+.nav-link{
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar-toggler{
+    border: 1px solid white !important;
+}
+.fa-bars{
+    color: white;
+}
+button.navbar-toggler:hover{
+    border: 1px solid rgb(233, 20, 109) !important;
+}
+button.navbar-toggler:hover .fa-bars{
+    color: rgb(233, 20, 109);
+}
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-link:hover, .navbar-brand:hover{
+    color:rgb(233, 20, 109);
+    transition: 0.5s;
+}
+/* main section */
+.main{
+    background: url(../img/hinh-nen-anime-cho-desktop-35.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    max-height: 110vh;
+}
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid rgb(233, 20, 109);
+    width: 40%;
+}
+.main .bt1{
+    height: 55px;
+    width: 138px;
+    background-color:rgb(233, 20, 109);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt1:hover{
+    background-color: rgb(190, 17, 89);
+    transition: 0.5s;
+}
+.main .bt2{
+    height: 55px;
+    width: 138px;
+    background-color:transparent;
+    color: white;
+    outline: none;
+    border: 1px solid rgb(233, 20, 109);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt2:hover{
+    background-color: rgb(233, 20, 109);
+    transition: 0.5s;
+    color: white;
+}
+.about img{
+    -webkit-box-shadow: 5px -1px 16px 4px rgba(0,0,0,0.35); 
+box-shadow: 5px -1px 16px 4px rgba(0,0,0,0.35);
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.progress{
+    background-color: rbg(223, 219, 219);
+    justify-content: flex-start;
+    border-radius: 400px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+    -webkit-box-shadow: inset 0px 0px 15px 2px rgba(0,0,0,0.36); 
+box-shadow: inset 0px 0px 15px 2px rgba(0,0,0,0.36);
+}
+.progress>div{
+    border-radius: 400px;
+    background-color: black;
+    height: 25px;
+    width: 0px;
+}
+.progress p{
+    color: white;
+    padding: 12px;
+    
+}
+.pro-value1{
+    animation: load1 5s normal forwards;
+}
+.pro-value2{
+    animation: load2 5s normal forwards;
+}
+.pro-value3{
+    animation: load3 5s normal forwards;
+}
+.pro-value4{
+    animation: load4 5s normal forwards;
+}
+@keyframes load1{
+    0%{
+        width:0;
+    }
+    100%{
+        width:50%;
+    }
+}
+@keyframes load2{
+    0%{
+        width:0;
+    }
+    100%{
+        width:70%;
+    }
+}
+@keyframes load3{
+    0%{
+        width:0;
+    }
+    100%{
+        width:60%;
+    }
+}
+@keyframes load4{
+    0%{
+        width:0;
+    }
+    100%{
+        width:70%;
+    }
+}
+.btn1{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+.btn1:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+.btn{
+    height: 40px !important;
+    width: 145px !important;
+}
+.btn2{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 4px;
+}
+.btn2:hover{
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+.my-card{
+    border: none;
+    outline: none;
+    -webkit-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75); 
+    -moz-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+    box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+}
+.my-card p{
+    color: gray;
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: lightgray;
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.my-card:hover .circle{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.my-card:hover {
+    box-shadow: 0px 16px 99px -50px rgba(0,0,0,0.75);
+}
+.skills ul{
+    padding-left: 40px;
+}
+.skills li{
+    margin-bottom: 5px;
+}
+.skills .card{
+    margin-bottom: 40px;
+}
+.badge{
+    font-size: 14px !important;
+}
+.badge:hover{
+    background: gray;
+    color: white;
+}
+.badge{
+    background: transparent;
+    color: gray;
+}
+.skills h5{
+    color: rgb(233, 20, 109);
+}
+section h1{
+    text-transform: uppercase;
+}
+hr{
+    background-color: rgb(233, 20, 109);
+    width: 10%;
+    margin:auto;
+    margin-bottom: 50px !important;
+}
+.row{
+    margin-top: 50px;
+}
+section {
+    padding-bottom: 50px;
+}
+.contact-icons{
+    font-size: 50px;
+}
+#about .fab{
+    color:rgb(233, 20, 109);
+}
+#about .fab:hover{
+    color: rgb(190, 17, 89);
+}
+
+#projects {
+	background-color: #423a3a;
+	padding-bottom: 80px;
+    color:white;
+}
+#projects h2 {
+	color: #F0F0F0;
+	margin-bottom: 140px;
+}
+#projects h2:after {
+	border-bottom: 2px dashed #b4b4b4;
+}
+#projects .row {
+	margin: 0px;
+	box-sizing: border-box;
+	padding: 0 60px;
+}
+#projects .heading {
+	color: #F0F0F0;
+	padding: 15px;
+	text-align: center;
+	position: absolute;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+#projects .heading span {
+	color: #635757;
+	display: block;
+	margin: 40px 0px;
+	font-size: 200%;
+}
+#projects .description {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 15px;
+}
+#projects .description > * {
+	display: none;
+	font-size: 90%;
+}
+#projects p {
+	color: #F0F0F0;
+	/*display: none;*/
+	margin-bottom: 30px;
+	line-height: 230%;
+}
+#projects .description span {
+	margin-left: 10px;
+}
+#projects .tools {
+	margin-top: 20px;
+	overflow: hidden;
+}
+#projects .tools span {
+    margin-left: 5px;
+	margin-top: 10px;
+	background-color: #114190;
+	color: #F0F0F0;
+    font-weight: 500;
+}
+#projects div section {
+	cursor: pointer;
+}
+#projects div:nth-child(odd) section {
+	background-color: #483F3F;
+	padding: 10px;
+	border: 3px solid #4D4343;
+}
+#projects div:nth-child(even) section {
+	background-color: #3D3636;
+	padding: 10px;
+	border: 3px solid #393333;
+}
+#projects img {
+	width: 100%;
+}
+#projects section {
+	height: 100%;
+	margin-bottom: 20px;
+}
+#projects .overlay {
+	position: relative;
+	padding-bottom: 0px;
+	min-height: 550px;
+  overflow: auto;
+}
+#projects .description h4 {
+	color: white;
+}
+#projects .heading {
+	position: relative;
+	margin: 0 auto;
+}
+#projects section:hover .overlay img {
+	opacity: 0;
+	transition: opacity .32s;
+}
+#projects section:hover .description {
+	top: 140px;
+	transition: top .5s;
+}
+#projects section:hover .overlay .heading span {
+	 -webkit-transform: rotate(180deg);
+	 position: relative;
+	 top: -80px;
+	 left: -30px;
+	 color: rgba(4,14,22,.83);;
+}
+#projects section:hover .overlay .description > * {
+	display: block;
+}
+#projects section:hover .overlay .heading {
+	position: absolute;
+	top: 0px;
+	transition: top .9s;
+}
+#projects section:hover .overlay .tools {
+	display:none;
+}
+#more{
+    background-color: rgba(0,0,0, 0.8);
+    background-size: cover;
+    width: 100%;
+    height: 45vh;
+    color: white;
+}
+#more a{
+    font-size: 30px;
+}
+#more hr{
+    height: 5px;
+    width: 30%;
+}
