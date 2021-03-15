@@ -3,8 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-.navbar{
+nav{
     background: rgba(0,0,0,0.6);
+    position: fixed !important;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .nav-link{
     color: white;
